@@ -1,0 +1,128 @@
+body {
+    background-color: #FF9E0D;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+table {
+    margin: auto;
+    background-color: #000;
+    position: relative;
+    width: 500px;
+    height: 600px;
+    padding: 25px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+table tr {
+    display: flex;
+    justify-content: center;
+}
+
+table tr:first-child {
+    max-width: 95%;
+}
+
+table tr:first-child td input:hover,
+table tr:first-child td input:focus {
+    pointer-events: none;
+}
+
+table tr:first-child td {
+    width: 100%;
+}
+
+table tr:last-child td p {
+    position: absolute;
+    font-size: 15px;
+    right: 30px;
+}
+
+table tr:last-child td p:first-child {
+    bottom: 10px;    
+}
+
+table tr:last-child td p:last-child {
+    bottom: 30px;
+}
+
+table tr td {
+    margin: 5px 0;
+    display: inline-block;
+}
+
+td p {
+    margin: 5px 0;
+    font-size: 25px;
+    letter-spacing: 3px;
+    color: #fff;
+    font-weight: bold;
+}
+
+input {
+    outline: 0;
+    position: relative;
+    border: 0;
+    top: 0;
+    color: #0d6efd;
+    background-color: #fff;
+    box-shadow: 0 6px 0 #0248b1;
+    border-radius: 4px;
+    width: 98px;
+    height: 60px;
+    margin: 5px;
+    font-size: 40px;
+    transition: all 0.2s ease-in-out 0s;
+}
+
+input:hover,
+input:focus {
+    top: 4px;
+    cursor: pointer;
+    box-shadow: 0 2px 0 #0248b1;
+}
+
+#display {
+    width: 100%;
+    font-size: 60px;
+    text-align: center;
+    background-color: #F1FAEB;
+    float: left;
+    height: 100px;
+
+}
+
+.operator {
+    color: #fff;
+    background-color: #0d6efd;
+}
+
+.clear {
+    color: #fff;
+    background-color: #dc3545;
+}
+
+input.operator,
+input.operator,
+input.clear,
+input.clear {
+    box-shadow: 0 6px 0 #fff;
+}
+
+input.operator:hover,
+input.operator:focus,
+input.clear:hover,
+input.clear:focus {
+    box-shadow: 0 2px 0 #fff;
+}
